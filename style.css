@@ -1,0 +1,46 @@
+ul {
+    list-style: none;
+}
+li{
+    padding-right: 15px;
+}
+.navbar {
+    display: flex;
+    align-items:flex-start;
+    justify-content: right;
+
+
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#profile {
+    background-image: url(profile_pic.jpg);
+    display: flex;
+    text-indent: -9999px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+#logo {
+    background-image: url(googlelogo_color.png);
+    display: flex;
+    text-indent: -9999px;
+    width: 544px;
+    height: 184px;
+}
+
+.right {
+    display: flex;
+    align-items:flex-start;
+    justify-content: right;
+}
+
+.left {
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+}
