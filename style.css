@@ -1,3 +1,14 @@
+body {
+    margin: 0;
+  }
+
+.container {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
 ul {
     list-style: none;
 }
@@ -6,41 +17,128 @@ li{
 }
 .navbar {
     display: flex;
-    align-items:flex-start;
-    justify-content: right;
-
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 
 }
 main {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-#profile {
-    background-image: url(profile_pic.jpg);
-    display: flex;
-    text-indent: -9999px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
 }
 
+.profile {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 5px white;
+
+}
+
+.profile:hover {
+    border: solid 5px rgb(207, 207, 207);
+}
 #logo {
-    background-image: url(googlelogo_color.png);
     display: flex;
-    text-indent: -9999px;
-    width: 544px;
-    height: 184px;
+}
+
+.goo  {
+    height: 100px;
+}
+
+.buttons {
+    display:flex;
+}
+
+.searchbar {
+ 
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 20px;
+    height: 35px;
+    padding: 2px 10px 2px 20px;
+    margin: 15px;
+    outline: 0;
+    width: 60%;
+
+  }
+
+.searchbar #search_term {
+    height: 25px;
+    border: none;
+    margin: 5px;
+    background-color: transparent;
+    justify-content: center;
+    width: 100%
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+button  {
+    background-color:rgb(240, 240, 240);
+    border: none;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    background: rgb(240, 240, 240);
+    color:rgb(141, 138, 138);
+}
+
+.footerwrap {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: solid 1px rgb(156, 155, 155);
+
 }
 
 .right {
+ 
     display: flex;
-    align-items:flex-start;
-    justify-content: right;
+    flex-wrap: wrap;
+
 }
 
 .left {
+ 
     display: flex;
-    align-items:flex-start;
-    justify-content: left;
+    flex-wrap: wrap;
+
+}
+
+.land {
+    margin-left: 40px;
+}
+header a, main a{
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+footer a{
+    padding-right: 10px;
+    color:rgb(141, 138, 138);
+    text-decoration: none;
 }

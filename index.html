@@ -8,30 +8,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
 <header>
     <ul class="navbar">
         <li><a href="gmail.html">Gmail</a></li>
         <li><a href="pictures.html">Bilder</a></li>
         <li><a href="apps.html">Apps</a></li>
-        <li><a href="profile.html" id="profile">Profil</a></li>
+        <li>
+            <a href="profile.html" id="profileimagewrapper">
+                <img alt="Profil" src="profile_pic.jpg"  class="profile">
+            </a>
+        </li>
       </ul> 
 </header>
 <main>
-<a href="index.html" id="logo">Google</a>
-<form>
-    <label for="search_term"> Suchen:
-        <input id="search_term" name="search_term">
+<a href="index.html" id="logo">
+    <img alt="Google" src="googlelogo_color.png" class="goo">
+</a>
+<form class="searchbar">
+    <label for="search_term">
+        <input type="search" results="0" id="search_term" name="search_term">
     </label>
 </form>
-<a href="search.html">Google Suche</a>
-<a href="lucky.html">Auf gut Glück!</a>
+<div class="buttons">
+<a href="search.html"><button>Suche</button> </a>
+<a href="lucky.html"><button>Auf gut Glück!</button></a>
+</div>
 
 <p>Google angeboten in: <a href="pol.html">polski</a> <a href="end.html">English</a></p>
+
 </main>
 <footer>
-<p>
+<p class="land">
     Österreich
 </p>
+<div class="footerwrap">
 <ul class="left">
     <li><a href="about.html">Über Google</a></li>
     <li><a href="advertisement.html">Werbeprogramme</a></li>
@@ -44,6 +55,8 @@
     <li><a href="terms.html">Nutzerbedingungen</a></li>
     <li><a href="settings.html">Einstellungen</a></li>
   </ul> 
+</div>
 </footer>
+</div>
 </body>
 </html>
